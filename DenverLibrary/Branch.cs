@@ -5,11 +5,13 @@ namespace DenverLibrary
     public class Branch
     {
         public string Name { get; set; }
-        public List<Book> Books { get; set; } = new List<Book>();
+        //public List<Book> Books { get; set; } = new List<Book>();
+        public List<Book> Books { get; set; }
 
         public Branch(string name)
         {
             Name = name;
+            Books = new List<Book>();
         }
 
         public void AddBook(Book book)
